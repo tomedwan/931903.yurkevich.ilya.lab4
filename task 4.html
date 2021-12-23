@@ -1,0 +1,256 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <link href="lab4.css" rel="stylesheet" />
+</head>
+  <style>
+
+  html
+   {
+      padding: 0;
+      margin: 0;
+      font-family: arial;
+      font-size: 13px;
+  }
+
+  #web {
+      padding-left: 15%;
+      margin-top: 7px;
+  }
+
+  #cat {
+      max-width: 100%;
+  }
+
+  header {
+      top: 0;
+      background-color: #507299;
+      height: 40px;
+      position: fixed;
+      width: 100%;
+      z-index: 5;
+  }
+
+  nav {
+      top: 40px;
+      bottom: 0;
+      padding: 13px 40px 0 40px;
+  }
+
+  ul {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0px;
+      list-style: none;
+  }
+
+  li {
+      padding: 5px;
+  }
+
+  a {
+      text-decoration: none;
+      color: #507299;
+  }
+
+  p {
+      background-color: #edeef0;
+  }
+
+  .block {
+      background-color: white;
+      border: 10px;
+      border-radius: 10px;
+      margin: 0px 10px 15px 10px;
+      padding: 10px;
+  }
+
+  .aside {
+      width: 170px;
+      text-align: left;
+      margin-left: 1100px;
+      position: fixed;
+      margin-top: 10px;
+  }
+
+  .flex-container {
+      display: -webkit-flex;
+      display: flex;
+      background-color: #edeef0;
+      justify-content: center;
+      text-align: justify;
+      margin-left: -150px;
+      margin-top: 40px;
+  }
+
+  .flex-container1 {
+      padding: 10px;
+      max-width: 390px;
+  }
+
+  .sidebar {
+      color: #507299;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 3px solid #d0d0d0;
+  }
+
+  nav {
+      max-width: 180px;
+  }
+
+  #comment {
+      float: right;
+  }
+
+  footer {
+      text-align: center;
+      color: #d0d0d0;
+      line-height: 30px;
+  }
+
+  #zagh3 {
+      margin-block-end: 0.1em;
+      margin-block-start: 0.1em;
+      position: relative;
+      border-bottom: 3px solid #d0d0d0;
+      padding-left: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      z-index: 1;
+  }
+
+  @media (max-width: 1095px) {
+      .aside {
+          display: none;
+      }
+      button {
+          display: none;
+      }
+  }
+
+  @media (max-width: 780px) {
+      .flex-container {
+          flex-direction: column;
+          align-items: center;
+          margin: auto;
+      }
+      nav {
+          margin-top: 40px;
+          padding-left: 30px;
+          min-width: 400px;
+      }
+      ul {
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      li {
+          padding-left: 20px;
+      }
+  }
+
+  li:hover {
+      background-color: #e1e5eb;
+  }
+
+  .block::selection {
+      color: green;
+  }
+
+  button {
+      float: right;
+      margin-top: 15px;
+  }
+
+  form {
+      display: inline;
+  }
+
+</style>
+
+  <body>
+      <header><img id="web" src="logo.png" alt="logo"></header>
+      <div class="flex-container">
+          <nav id="fnav">
+              <ul>
+                  <li><a href="#MainPage">Main page</a></li>
+                  <li><a href="#secondaryPage">Secondary page</a></li>
+                  <li><a href="#SomeOtherPage">Some other page</a></li>
+                  <li><a href="#MorePageToTheGodOfPages">More pages to the god of pages</a></li>
+                  <li><a href="#TheLastPage">The last page</a></li>
+              </ul>
+          </nav>
+          <main class="flex-container1">
+              <div class="block">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <div class="sidebar">
+                      <span id="like">Like</span>
+                      <span id="comment">Comment</span>
+                  </div>
+              </div>
+              <div class="block">
+                  <img id="cat" src="cat.png" alt="logo">
+                  <div class="sidebar">
+                      <span id="like">Like</span>
+                      <span id="comment">Comment</span>
+                  </div>
+              </div>
+              <div class="block">
+                  <h3 id="zagh3"><b>Some header</b></h4>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      <div class="sidebar">
+                          <span id="like">Like</span>
+                          <span id="comment">Comment</span>
+                      </div>
+              </div>
+              <div class="block">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <div class="sidebar">
+                      <span id="like">Like</span>
+                      <span id="comment">Comment</span>
+                  </div>
+              </div>
+              <div class="block">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <div class="sidebar">
+                      <span id="like">Like</span>
+                      <span id="comment">Comment</span>
+                  </div>
+              </div>
+          </main>
+          <div class="aside">
+              <div class="block">
+                  <p>
+                      Very important inforamation!
+                  </p>
+                  <p>
+                      Many,many very usefull and important inforamation!.
+                  </p>
+              </div>
+              <div class="block">
+                  <h3>Some new header</h3>
+                  <p>
+                      For example, some new and usefull fixed text. And many anoyher text and more text ...
+                  </p>
+              </div>
+          </div>
+      </div>
+      <footer>
+          Simple footer (text in the center)
+      </footer>
+  </body>
+
+  </html>
